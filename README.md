@@ -1,4 +1,4 @@
-# West
+# West🌵
 My super simple tester for web assembly. It iterates through every exported function that starts with `test` and calls the function.
 
 * if it returns 0, it assumes the test passes
