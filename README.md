@@ -24,3 +24,7 @@ west("test.wasm",{
     //do nothing during tests
   });
 ```
+
+# What about a CLI
+
+TBD
