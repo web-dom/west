@@ -4,18 +4,12 @@ My super simple tester for web assembly. It iterates through every exported func
 * if it's a 0, it assumes the test passes
 * if it's non-zero, it assumes the test failed and the value represents the start of a C-string saying what went wrong
 
+Just create an `index.html`
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-  </head>
-  <body></body>
-  <script src="west.js"></script>
-  <script>
-    west("test.wasm");
-  </script>
-</html>
+<script src="https://unpkg.com/@web-dom/west@latest/west.js"></script>
+<script>
+  west("test.wasm");
+</script>
 ```
 
 See a demo [here](https://web-dom.github.io/west/)
