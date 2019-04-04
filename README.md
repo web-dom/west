@@ -25,6 +25,6 @@ west("test.wasm",{
   });
 ```
 
-# What about a CLI
+# What about a CLI?
 
 TBD
