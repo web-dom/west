@@ -1,0 +1,23 @@
+{
+  "name": "@web-dom/west",
+  "version": "0.0.0",
+  "description": "A testing library for web assembly",
+  "main": "west.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dom/west.git"
+  },
+  "keywords": [
+    "testing",
+    "web assembly"
+  ],
+  "author": "Richard Anaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-dom/west/issues"
+  },
+  "homepage": "https://github.com/web-dom/west#readme"
+}
