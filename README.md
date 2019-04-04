@@ -1,8 +1,8 @@
 # West
 My super simple tester for web assembly. It iterates through every exported function that starts with "test" and calls the function.
 
-* if it's a 0, it assumes the test passes
-* if it's non-zero, it assumes the test failed and the value represents the start of a C-string saying what went wrong
+* if it returns 0, it assumes the test passes
+* if it returns non-zero, it assumes the test failed and the value represents the start of a C-string saying what went wrong
 
 Just create an `index.html`
 ```html
