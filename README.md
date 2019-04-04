@@ -18,7 +18,7 @@ My super simple tester for web assembly. It iterates through every exported func
 </html>
 ```
 
-See a demo [here]()
+See a demo [here](https://web-dom.github.io/west/)
 
 # What if I have other imports
 
