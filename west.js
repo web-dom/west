@@ -1,4 +1,4 @@
-function west(module){
+function west(module,imports={}){
   let utf8dec = new TextDecoder("utf-8");
   let memory = null;
   function fromCString(start) {
@@ -13,13 +13,12 @@ function west(module){
   fetch(module)
     .then(response => response.arrayBuffer())
     .then(bytes => {
+      imports.console_log = function(message_start) {
+        let _message = fromCString(message_start);
+        document.querySelector("div").innerHTML += _message + "\n";
+      };
       return WebAssembly.instantiate(bytes, {
-        env: {
-          console_log: function(message_start) {
-            let _message = fromCString(message_start);
-            document.querySelector("div").innerHTML += _message + "\n";
-          }
-        }
+        env: imports
       });
     })
     .then(results => {

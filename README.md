@@ -19,3 +19,14 @@ My super simple tester for web assembly. It iterates through every exported func
 ```
 
 See a demo [here]()
+
+# What if I have other imports
+
+Other imports can be mocked out to do whatever you like with an additional argument:
+
+```javascript
+west("test.wasm",{
+  my_imported_function(){
+    //do nothing during tests
+  });
+```
